@@ -1,20 +1,11 @@
-"use client";
-import { useState } from "react";
 import { cn } from "@/utils/cn";
 
 type PropsType = {
   disabled?: boolean;
+  handleClick: () => void;
 };
 
-export default function Button({ disabled }: PropsType) {
-  const [show, setShow] = useState(false);
-
-  const handleClick = () => {
-    if (!disabled) {
-      setShow((prev) => !prev);
-    }
-  };
-
+export default function Button({ disabled, handleClick }: PropsType) {
   return (
     <button
       onClick={handleClick}
@@ -23,7 +14,7 @@ export default function Button({ disabled }: PropsType) {
         disabled && "bg-gray-500 hover:bg-gray-500 opacity-70"
       )}
       disabled={disabled}>
-      Button {show && "clicked"}
+      Button
     </button>
   );
 }

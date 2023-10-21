@@ -1,9 +1,8 @@
-import Button from "@/components/button/Button";
-
+import LoginForm from "@/layouts/home/forms/LoginForm";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button />
+    <main className="flex min-h-screen flex-col items-center gap-5 p-24">
+      <LoginForm />
     </main>
   );
 }
