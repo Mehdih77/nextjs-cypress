@@ -2,7 +2,7 @@ import { cn } from "@/utils/cn";
 
 type PropsType = {
   disabled?: boolean;
-  handleClick: () => void;
+  handleClick?: () => void;
 };
 
 export default function Button({ disabled, handleClick }: PropsType) {
