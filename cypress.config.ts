@@ -21,4 +21,11 @@ export default defineConfig({
       },
     },
   },
+  env: {
+    email: "test",
+    username: "email8@email.com",
+    password: "1234888",
+  },
 });
+
+//! the env data in "cypress.env.json" file, will overwrite the env in here
